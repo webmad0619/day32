@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+
+}
+
+.productDisplayer {
+  display: flex;
+  flex-direction: row;
 }
 
 .App-logo {
