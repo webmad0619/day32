@@ -1,0 +1,35 @@
+.App {
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.colorbox {
+    height: 100px;
+    width: 300px;
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile {
+    border: 1px solid black;
+}
+
+.studentProfile {
+    margin-left: 200px;
+}
+
+.weather-widget {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 0 0 20px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
