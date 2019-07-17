@@ -4,6 +4,8 @@ import IronPrice from './IronPrice';
 import logo from "./logo.svg"
 import Product from './Product';
 import ProductDisplayer from './ProductDisplayer';
+import CoolButton from './CoolButton';
+
 
 class App extends React.Component {
   constructor() {
@@ -118,24 +120,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <button onClick={() => this.toggleVisibility()}>Click to toggle product displayer visibility</button>
-
-        {/* {
-          this.state.visible ? <ProductDisplayer products={this.state.products}></ProductDisplayer> : null
-        } */}
-
-        {
-          this.state.visible && <ProductDisplayer products={this.state.products}></ProductDisplayer>
-        }
-
-        {/* <ul>{this.state.allSectionNames}</ul>
-        <img src={logo} alt="logo" />
-        <button onClick={() => this.increaseTaxes()}>Add Taxes!</button>
-        {
-          this.state.prices.map((price, idx) => {
-            return <IronPrice price={price} key={idx}></IronPrice>
-          })
-        } */}
+        <CoolButton isSmall></CoolButton>
+        <CoolButton isSmall isDanger></CoolButton>
       </div>
     );
   }
